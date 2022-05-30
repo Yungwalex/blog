@@ -12,9 +12,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
-from pickle import FALSE
-
-import django
 from dotenv import load_dotenv, find_dotenv 
 load_dotenv(find_dotenv())
 import dj_database_url
@@ -43,8 +40,8 @@ if environment == 'delopment':
 }
 
 elif environment == 'production':
-   DEBUG = FALSE
-   ALLOWED_HOSTS = []
+   DEBUG = False
+   ALLOWED_HOSTS = ['hybree.herokuapp.com']
    DATABASES ={}
    DATABASES['default'] = dj_database_url.config()
    
