@@ -40,7 +40,7 @@ if environment == 'development':
 }
 
 elif environment == 'production':
-   DEBUG = True
+   DEBUG = False
    ALLOWED_HOSTS = ['hybree.herokuapp.com']
    DATABASES ={}
    DATABASES['default'] = dj_database_url.config()
