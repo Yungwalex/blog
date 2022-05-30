@@ -27,7 +27,7 @@ def post_list(request, tag_slug=None):
     except EmptyPage:
          posts= paginator.page(paginator.num_pages) 
          
-    return render(request, 'blog/blog/list.html', {'page': page, 'posts': posts, 'tags': tags})
+    return render(request, 'blog/blog/list.html', {'page': page, 'posts': posts, 'tag': tag})
  
 def post_detail(request, year, month, day, post):
     post =get_object_or_404(post, slug=post, statyus= 'published', Publish__year= year, publish__month= month, publish__day= day)
