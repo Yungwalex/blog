@@ -3,7 +3,7 @@ from . import views
 
 
 
-app_name = 'blogapp'
+app_name = 'myblog'
 
 
 
