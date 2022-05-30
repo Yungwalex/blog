@@ -1,4 +1,4 @@
-from msilib.schema import PublishComponent
+# from msilib.schema import PublishComponent
 from django.shortcuts import render, get_object_or_404
 from pkg_resources import register_namespace_handler
 from .models import Post, Comment
