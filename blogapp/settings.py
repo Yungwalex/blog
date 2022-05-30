@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv('BLOG_KEY')
 environment = os.getenv('ENVIRONMENT', 'development')
 # SECURITY WARNING: don't run with debug turned on in production!
 
-if environment == 'delopment':
+if environment == 'development':
 
   DEBUG = True
   ALLOWED_HOSTS = []
